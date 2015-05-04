@@ -3,7 +3,7 @@
 
 ## Hello Universe!
 
-This is my first try at github!
+This is a work in progress!
 
 My Github user page is at:
 https://github.com/tdnichols/
