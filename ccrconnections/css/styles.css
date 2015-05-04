@@ -149,7 +149,7 @@ a:visited {
 
 #content .calloutBox {
   background-color: #fff;
-  background-image: url(../images/callout_box_bottom.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461162/3bb30aee-f276-11e4-9ecd-64de7742dcfd.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   padding: 0 0 10px 0;
@@ -160,7 +160,7 @@ a:visited {
 
 #content .calloutBox .calloutBox_top {
   background-color: #fff;
-  background-image: url(../images/callout_box_top.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461157/3bb17026-f276-11e4-956e-6a2ea9a3aa42.png);
   background-repeat: no-repeat;
   background-position: left top;
   height: 10px;
@@ -168,7 +168,7 @@ a:visited {
 
 #content .calloutBox .calloutBox_middle {
   background-color: #fff;
-  background-image: url(../images/callout_box_middle.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461158/3bb18610-f276-11e4-92ba-6d19f6ebc740.png);
   background-repeat: repeat-y;
   background-position: left top;
   height: 100%;
@@ -198,7 +198,7 @@ a:visited {
 
 #content_wide .calloutBox {
   background-color: #fff;
-  background-image: url(../images/callout_box_bottom_wide.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461160/3bb1803e-f276-11e4-809c-3aaea9245ad9.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   padding: 0 0 10px 0;
@@ -209,7 +209,7 @@ a:visited {
 
 #content_wide .calloutBox .calloutBox_top {
   background-color: #fff;
-  background-image: url(../images/callout_box_top_wide.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461163/3bb4b9e8-f276-11e4-9035-d4b499a88e02.png);
   background-repeat: no-repeat;
   background-position: left top;
   height: 10px;
@@ -217,7 +217,7 @@ a:visited {
 
 #content_wide .calloutBox .calloutBox_middle {
   background-color: #fff;
-  background-image: url(../images/callout_box_middle_wide.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/12158413/7461159/3bb174ea-f276-11e4-9979-6637c1941b90.png);
   background-repeat: repeat-y;
   background-position: left top;
   height: 100%;
