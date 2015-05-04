@@ -16,7 +16,7 @@ body {
 	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7460589/049ce6aa-f272-11e4-800c-f4ad7d0243eb.jpg);	
 	background-repeat: repeat-x;
 	background-position: left top;
-	font-family: 'PTSansRegular', arial, sans-serif;
+	font-family: 'PT Sans', arial, sans-serif;
 	color: #333;
 }
 
@@ -129,7 +129,8 @@ i, em {
 /*---- 2 column layout ----*/
 #content_wide b, 
 #content_wide strong{
-	font-family: 'PTSansBold';
+	font-family: 'PT Sans';
+	font-weight: 700;
 }
 
 a {
