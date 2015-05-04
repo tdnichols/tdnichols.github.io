@@ -11,6 +11,7 @@ https://github.com/tdnichols/
 My Github Pages repo can be found at:
 https://github.com/tdnichols/tdnichols.github.io/
 
-Soon, you can see my customized homepage at:
+Soon, you can see links to my portfolio samples below:
 
-http://tdnichols.github.io/
+CCR Connections Webzine Prototype
+http://tdnichols.github.io/ccrconnections/
