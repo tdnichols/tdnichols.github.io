@@ -15,5 +15,6 @@ Soon, you can see links to my portfolio samples below:
 
 CCR Connections Webzine Prototype
 http://tdnichols.github.io/ccrconnections/
+
 CCR Connections Production Link
 http://home.ccr.cancer.gov/connections/
