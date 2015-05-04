@@ -404,7 +404,7 @@ three column images should be no greater than 288px wide
 }
 
 #mega li {
-	background-image:url(../images/nav_tab_bg_w_separator.jpg);
+	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7461510/de2ba694-f278-11e4-984d-35fdea3380c1.jpg);
 	color:#FFF;
 	float:left;
 	width:120px;
@@ -415,7 +415,7 @@ three column images should be no greater than 288px wide
 	background-position: left top;
 }
 #mega li.first {
-	background-image:url(../images/nav_tab_bg_wo_separator.jpg);
+	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7461512/de2d4184-f278-11e4-9ecc-6aa683e3fb9e.jpg);
 }
 #mega li:hover {
 	background:#fff;
@@ -516,7 +516,7 @@ three column images should be no greater than 288px wide
 }
 
 #mega_archive li {
-	background-image:url(../images/nav_tab_bg_w_separator.jpg);
+	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7461510/de2ba694-f278-11e4-984d-35fdea3380c1.jpg);
 	color:#FFF;
 	float:left;
 	width:106px;
@@ -527,7 +527,7 @@ three column images should be no greater than 288px wide
 	background-position: left top;
 }
 #mega_archive li.first {
-	background-image:url(../images/nav_tab_bg_wo_separator.jpg);
+	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7461512/de2d4184-f278-11e4-9ecc-6aa683e3fb9e.jpg);
 }
 #mega_archive li:hover {
 	background:#fff;
