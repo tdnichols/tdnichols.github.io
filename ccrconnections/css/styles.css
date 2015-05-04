@@ -86,7 +86,6 @@ h1, h2, h3 {
 #content h4,
 /*---- 2 column layout ----*/
 #content_wide h4 {
-	/*font-family: 'PTSansBold', arial, sans-serif;*/
 	font-family: verdana, arial, sans-serif;
 	font-weight: bold;
 	line-height: 1.5em; /* 24px/16px */
@@ -399,7 +398,8 @@ three column images should be no greater than 288px wide
 #mega {
 	list-style:none;
 	/*font-weight:600;*/
-	font-family: 'PTSansBold', arial, sans-serif;
+	font-family: 'PT Sans', arial, sans-serif;
+	font-weight: 700;
 	height:36px;
 	width: 960px;
 }
@@ -482,7 +482,7 @@ three column images should be no greater than 288px wide
 }
 #mega li li a {
 	color:#FFF;
-	font-family: 'PTSansRegular', 'Lucida Sans', arial, sans-serif;
+	font-family: 'PT Sans', 'Lucida Sans', arial, sans-serif;
 	font-weight: normal;
 	padding:0 0 9px 0;
 	margin:0;
@@ -511,7 +511,8 @@ three column images should be no greater than 288px wide
 #mega_archive {
 	list-style:none;
 	/*font-weight:600;*/
-	font-family: 'PTSansBold', arial, sans-serif;
+	font-family: 'PT Sans', arial, sans-serif;
+	font-weight: 700;
 	height:36px;
 	width: 960px;
 }
@@ -594,7 +595,7 @@ three column images should be no greater than 288px wide
 }
 #mega_archive li li a {
 	color:#FFF;
-	font-family: 'PTSansRegular', 'Lucida Sans', arial, sans-serif;
+	font-family: 'PT Sans', 'Lucida Sans', arial, sans-serif;
 	font-weight: normal;
 	padding:0 0 9px 0;
 	margin:0;
@@ -675,7 +676,6 @@ three column images should be no greater than 288px wide
 #content .thumb_wrapper h3 {
 	font-size: 1em; /* 14px/16px */
 	line-height: 1.3125em; /* 21px/16px */
-	/*font-family: 'PTSansBold', arial, sans-serif;*/
 	margin: 0;
 	padding: 0;
 }
