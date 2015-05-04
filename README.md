@@ -13,8 +13,8 @@ https://github.com/tdnichols/tdnichols.github.io/
 
 ## You can view links to my portfolio samples below:
 
-CCR Connections Webzine Prototype
+CCR Connections HTML Prototype
 http://tdnichols.github.io/ccrconnections/
 
-CCR Connections Production Link
+CCR Connections Live Link
 http://home.ccr.cancer.gov/connections/
