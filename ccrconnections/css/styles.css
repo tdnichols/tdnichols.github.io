@@ -13,7 +13,7 @@
 
 body {
 	background-color: #FFF;
-	background-image:url(../images/body_bg.jpg);	
+	background-image:url(https://cloud.githubusercontent.com/assets/12158413/7460589/049ce6aa-f272-11e4-800c-f4ad7d0243eb.jpg);	
 	background-repeat: repeat-x;
 	background-position: left top;
 	font-family: 'PTSansRegular', arial, sans-serif;
@@ -793,7 +793,7 @@ three column images should be no greater than 288px wide
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
-	background-image: url(../images/commentary_hdr.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7460563/de67f1e6-f271-11e4-88ab-6af5101415f9.jpg);
 	background-repeat: no-repeat;
 	margin: 0 !important;
 	padding: 0 !important;
