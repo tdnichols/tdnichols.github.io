@@ -16,5 +16,5 @@ https://github.com/tdnichols/tdnichols.github.io/
 CCR Connections HTML Prototype
 http://tdnichols.github.io/ccrconnections/
 
-CCR Connections Live Link
+CCR Connections Live Site
 http://home.ccr.cancer.gov/connections/
