@@ -1,0 +1,821 @@
+/* 
+	
+Description: 	eVIP Custom CSS
+Author: 		TN
+Division: 		NIH/CIT/DECA
+Version: 		1.0
+
+Changelog:		v1.0 - 01.22.2014
+IE Support:		IE8+
+
+*/
+
+
+/*
+
+Font Styles for Open Sans
+
+font-weight: 300 	Light 300 
+font-weight: 400	Normal 400
+font-weight: 600	Semi-Bold 600
+font-weight: 700	Bold 700
+
+*/
+
+
+
+/**| GENERAL STYLES |**********************************/
+
+
+
+body {
+	background-color: #8c8b8b;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+	background-position:left top;
+	font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+	font-size: 1.3125em; /* 21px */
+	color: #333;
+	margin-bottom: 40px;
+	margin-top: 0;
+	font-weight: 600; /* semi-bold 600 */
+}
+
+h3 {
+	color: #333;
+	margin-bottom: 15px;
+	margin-top: 30px;
+	font-size: 0.875em; /* 14px */
+	line-height: 1.5625em;
+	text-transform: uppercase;
+	font-weight: 600; /* semi-bold 600 */	
+}
+
+h4 {
+	font-size: 0.875em; /* 14px */
+	color: #333;
+	margin: 30px 0 15px 0;
+}
+
+p {
+	margin-bottom: 15px;
+	line-height: 1.5625em;
+	color: #444;
+	font-size: 0.875em;
+}
+
+ul,
+ol {
+	margin-bottom: 25px;
+	font-size: 0.875em; /* 14px */
+	color: #444;	
+}
+
+ul li,
+ol li { 
+  margin-bottom: 10px;
+  line-height: 1.5625em;	
+}
+
+a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/**| MISC |*************************************/
+
+.hide {
+	display: none;
+}
+
+.hide-txt {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+a[href^="http://"] {
+    background: url(../images/icon-external-link.gif) center right no-repeat;
+    padding-right: 14px;
+}
+
+a[href^="http://evip.nih.gov"],/* removes external icon from links with absolute references to the eVIP domain. */
+#top-banner a[href^="http://www.nih.gov"]  { /* removes external icon from NIH link in the top banner */ 
+    background: none;
+    padding-right: 0;
+}
+
+.tip {
+	padding: 15px;
+	background-color: #dff0d8;
+	color: #48874a;
+	font-size: 0.8125em; /* 13px */
+	border-left: 3px solid #48874a;
+}
+
+.note {
+	padding: 15px;
+	background-color: #ffffcc;
+	border: 1px solid #ccc;
+	color: #333;
+	font-size: 0.8125em; /* 13px */
+	clear:both;
+}
+
+.right {
+	float: right;
+}
+
+.button-wrapper {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	display: block;
+}
+
+.button {
+	width: auto;
+	padding: 15px;
+	background-color: #2384cb;
+	margin-right: 20px;
+	display: block;
+	float: left;
+	color: #fff;
+	font-weight: 600; /* semi-bold 600 */
+	font-size: 0.875em; /* 14px */
+}
+
+#jobAid {
+	float: right;
+	padding: 10px 0;
+}
+
+.normal {
+	text-transform:none;
+}
+
+
+
+/* List columns */
+
+#bizadmin-content #filter_wrapper ul.columns {
+  width:360px;
+  overflow:hidden;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+#bizadmin-content #filter_wrapper ul li {
+  line-height:1.5em;
+  float:left;
+  display:inline;
+}
+
+#filter_wrapper .double li  { width:50%;} /* 2 col */
+#filter_wrapper .triple li  { width:33.333%; } /* 3 col */
+#filter_wrapper .quad li    { width:25%; } /* 4 col */
+#filter_wrapper .six li     { width:16.666%; } /* 6 col */
+
+/**| TABLE STYLES |******************************/
+
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+	font-size:0.8125em; /* 13px */
+	margin: 30px 0 15px 0;
+	width: 100%;
+}
+
+tr:last-child td {
+  border: 0;
+}
+
+table tr td,
+table tr th {
+	padding: 10px;
+	border-bottom: 1px solid #c6c9cc;
+}
+
+table tr th {
+  background: #404853;
+  color: #fff;
+}
+
+table tr:nth-child(odd) {
+  background: #e8eae9;
+}
+
+table tr th a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+table tr td {
+	text-align:center;
+}
+
+/* left aligns the 1st and 2nd table cell for each row */
+
+table tbody tr td:first-child,
+table tbody tr th:first-child,
+table tbody tr td:first-child + td,
+table tbody tr th:first-child +th {
+      text-align: left;
+}
+
+
+/**| PAGE LAYOUT |*************************************/
+
+#page-wrapper {
+	width: 1024px;
+	margin: 0 auto;	
+}
+
+/* top banner */
+
+#top-banner {
+    height: 2em;      /* equals max image height */
+    width: 920px;
+	padding: 0 52px;
+	background-color: #3a3a3a;
+	line-height: 2em;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#top-banner img {
+    vertical-align: middle;
+    max-height: 30px;
+    max-width: 185px;
+}
+
+#login_txt {
+	float: right;
+	color: #fff;
+	font-size: 0.6875em;	
+}
+
+#login_txt a:link,
+#login_txt a:visited {
+	color: #fff;	
+}
+
+/* Logo banner */
+
+#logo-banner {
+	width: 920px;
+	padding: 0 52px;
+	background-color: #f5f5f5;
+}
+
+#logo-banner #logo img {
+	vertical-align: middle;
+}
+
+#logo-banner #logo {
+	float: left;
+	display: table-cell;
+ 	vertical-align: middle;
+	height: 100%;
+}
+
+/* iService banner */
+
+#iService-banner {
+	width: 920px;
+	padding: 30px 52px;
+	background-color: #3567ac;
+	background-image: url(../images/iService_Banner_Bg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+}
+
+#iService-banner h2 {
+	font-size: 1.875em; /* 30px */
+	font-weight: 400; /* Semi-bold 600 */
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* BizAdmin banner */
+
+
+#bizadmin-banner {
+	width: 920px;
+	padding: 30px 52px;
+	background-color: #823da4;
+	background-image: url(../images/bizadmin_Banner_Bg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+}
+
+#bizadmin-banner h2 {
+	font-size: 1.875em; /* 30px */
+	font-weight: 400; /* Semi-bold 600 */
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* CCR Search banner */
+
+
+#ccrSearch-banner {
+	width: 920px;
+	padding: 30px 52px;
+	background-color: #FF9933;
+	background-image: url(../images/ccrSearch_Banner_Bg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+}
+
+#ccrSearch-banner h2 {
+	font-size: 1.875em; /* 30px */
+	font-weight: 400; /* Semi-bold 600 */
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* alert banner */
+
+#page-wrapper #alert {
+	width: 920px;
+	padding: 15px 52px;
+	background-color: #eb5745;
+	color: #fff;
+	background-image: url(../images/alert_icon.png);
+	background-repeat: no-repeat;
+	background-position: 52px 15px;
+}
+
+#page-wrapper #alert p {
+	margin: 0 0 0 40px;
+	font-size: 0.875em; /* 14px */
+	color: inherit;
+}
+
+/* welcome content */
+
+#welcome-content {
+	width: 920px;
+	padding: 35px 52px;
+	background-color: #1d407f;
+	background-image: url(../images/welcomeBg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+	color: #fff;
+}
+
+#welcome-content p {
+	font-size: 1.125em; /* 18px */
+	line-height: 1.6875em; /* 27px */
+	margin-bottom: 45px;
+	color: #fff;	
+}
+
+#welcome-content a,
+#welcome-content a:visited {
+	color: #fff;
+	text-decoration: underline !important;
+}
+
+.curved-box {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	behavior: url(PIE.htc); /* IE 6-9 */
+}
+
+/* Welcome page bizadmin and isupplier blocks */
+
+.hm-bizadmin-block,
+.hm-isupplier-block {
+	width: 325px;
+	padding: 20px;
+	background-color: #2384cb;
+	margin-right: 20px;
+	display: block;
+	float: left;
+}
+
+#welcome-content .hm-bizadmin-block h3,
+#welcome-content .hm-isupplier-block h3 {
+	color: #fff;
+	margin: 0 0 5px 50px;
+	padding: 0;
+	font-size: 1.125em; /* 18px */
+	font-weight: 600; /* Semi-bold 600 */
+	text-decoration: underline;
+	text-transform: none;
+	line-height: 1em;
+}
+
+#welcome-content .hm-bizadmin-block p,
+#welcome-content .hm-isupplier-block p {
+	font-size: 0.875em; /* 14px */
+	margin: 0 0 0 50px;
+	padding: 0;	
+}
+
+
+#welcome-content .hm-bizadmin-block h3 a,
+#welcome-content .hm-isupplier-block h3 a {
+	color: #fff;
+}
+
+.hm-bizadmin-block {
+	background-image: url(../images/hm_bizadmin_icon.png);
+	background-repeat: no-repeat;
+	background-position: 20px 20px;	
+}
+
+.hm-isupplier-block {
+	background-image: url(../images/hm_isupplier_icon.png);
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+}
+
+/* important information box */
+#important-info,
+#iservice-content,
+#bizadmin-content {
+	width: 920px;
+	padding: 35px 52px;
+	background-color: #fff;	
+}
+
+#bizadmin-content h2 {
+	margin-bottom: 15px;	
+}
+
+#vendor_name_id_wrapper,
+#filter_wrapper {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 25px;
+}
+
+#vendor_name_id_wrapper p {
+	margin-top: 0;
+	padding-top: 0;	
+}
+
+#iservice-content #wide-col,
+#bizadmin-content #wide-col {
+	width: 660px;
+	float: left;
+}
+
+#iservice-content #narrow-col {
+	width: 230px;
+	margin-left: 30px;
+	padding-top: 20px;
+	float: right;
+	border-top: 12px solid #3465aa;	
+}
+
+#bizadmin-narrow-col {
+	width: 230px;
+	margin-left: 30px;
+	padding-top: 20px;
+	float: right;
+	border-top: 12px solid #8e44ad;		
+}
+
+#iservice-content #narrow-col h3,
+#bizadmin-narrow-col h3 {
+	margin-top: 0;
+}
+
+#iservice-content #narrow-col ul,
+#bizadmin-narrow-col ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+	font-size: 0.8125em;	
+}
+
+#iservice-content #narrow-col p,
+#bizadmin-narrow-col p {
+	font-size: 0.8125em; /* 13px */
+}
+
+.box h3 {
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 7px;
+	font-weight: 700; /* bold 700 */
+	text-transform: none;	
+}
+
+.box p {
+	font-size: 0.8125em; /* 13px */
+	margin-top: 0;
+}
+
+.invite {
+	background-image: url(../images/new_user_icon.jpg);
+	padding: 7px 7px 0px 35px;
+	background-repeat: no-repeat;
+	background-position: 0 7px;	
+}
+
+.manageInvitations {
+	background-image: url(../images/invitations_icon.jpg);
+	padding: 7px 7px 0px 35px;
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+.manageUsers {
+	background-image: url(../images/manage_users_icon.jpg);
+	padding: 7px 7px 0px 40px;
+	background-repeat: no-repeat;
+	background-position: 0 7px;
+}
+
+/* BizAdmin Function Description Boxes */
+
+.box {
+	float: left;
+	width: 206px;
+	padding-top: 30px;
+}
+
+.box h3 a {
+	text-decoration: none;
+}
+
+.box h3 a:hover {
+	text-decoration: underline;
+}
+
+.margin_spacer {
+	margin: 0 0 0 20px;
+}
+
+
+
+#important-info-box {
+	border: 3px solid #d6d6d6;
+	background-color: #fff;
+	padding: 20px;
+	width: 860px;
+	background-image: url(../images/important_info_icon.png);
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+	float: left;
+}
+
+#welcome-content #important-info-box {
+	margin-top: 35px;
+}
+
+#welcome-content #important-info-box h3,
+#important-info-box h3 {
+	font-size: 1.3125em; /* 21px */
+	margin: 0 0 21px 40px;
+	font-weight: 600; /* semi-bold 600 */
+	color: #333;
+	text-transform: none;
+	line-height: 1em;	
+}
+
+#welcome-content #important-info-box ul,
+#important-info-box ul {
+	font-size: 0.875em; /* 14px */
+	margin: 0 0 21px 40px;
+	padding-left: 20px;
+	font-weight: 400; /* Normal */
+	color: #333;	
+}
+
+#welcome-content #important-info-box ul li, 
+#important-info-box ul li {
+	padding: 0 0 9px 0;
+	margin: 0;
+	line-height: 1.5em;	
+}
+
+/* footer */
+
+#footer {
+	background-color: #e6e6e6;
+	border-top: 1px solid #999;
+	padding: 35px 52px;
+	font-size: 0.875em;
+	color: #444;
+	text-align:center;
+}
+
+#footer ul {
+	margin: 0 0 21px 0;
+}
+
+#footer ul li {
+	display: inline; 
+	border-left: 1px solid; 
+	padding: 0 10px 0 13px;		
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+#footer ul li a:hover {
+	text-decoration: underline;
+}
+
+#footer ul li:first-child {
+	border-left: none;	
+}
+
+
+/**|  GLOBAL NAVIGATION  |***********************************/
+
+#global-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;	
+	display: inline;
+}
+
+#global-nav a {
+	color: #898989;
+	text-decoration:none;
+}
+
+#global-nav li {
+	color:#898989;
+	float: left;
+	font-weight: 600; /* semi-bold 600 */
+	text-align:center;
+	border-right: 1px solid #d8d8d9;
+	margin: 0;
+	padding: 0;
+}
+
+#global-nav li a {
+	padding: 21px 19px 21px 20px;
+	display: block;
+}
+
+#global-nav #external_isupplier {
+	padding-right: 19px;
+}
+
+#global-nav #external_isupplier:hover {
+	background-color: #fff;	
+}
+
+#global-nav li a:hover,
+#global-nav li a.active {
+	background-color: #fff;
+	color: #0066cc;
+}
+
+/* BizAdmin main navigation */
+
+#bizadmin-nav-wrapper {
+	width: 920px;
+	padding: 0 52px;
+	background-color: #333;
+}
+
+#bizadmin-nav-wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;	
+	display: inline;
+}
+
+#bizadmin-nav-wrapper ul a {
+	color: #fff;
+	text-decoration:none;
+}
+
+#bizadmin-nav-wrapper ul li {
+	color:#fff;
+	float: left;
+	font-weight: 600; /* semi-bold 600 */
+	text-align:center;
+	margin: 0;
+	padding: 0;
+}
+
+#bizadmin-nav-wrapper ul li a {
+	padding: 15px 20px 11px 20px;
+	display: block;
+	border-bottom: 4px solid #333;
+}
+
+#bizadmin-nav-wrapper ul li a:hover,
+#bizadmin-nav-wrapper ul li a.active {
+	background-color: #434343;
+	border-bottom: 4px solid #8e44ad;	
+}
+
+/* CCR Search Navigation */
+
+#ccrSearch-nav-wrapper {
+	width: 920px;
+	padding: 0 52px;
+	background-color: #333;
+}
+
+#ccrSearch-nav-wrapper ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;	
+	display: inline;
+}
+
+#ccrSearch-nav-wrapper ul a {
+	color: #fff;
+	text-decoration:none;
+}
+
+#ccrSearch-nav-wrapper ul li {
+	color:#fff;
+	float: left;
+	font-weight: 600; /* semi-bold 600 */
+	text-align:center;
+	margin: 0;
+	padding: 0;
+}
+
+#ccrSearch-nav-wrapper ul li a {
+	padding: 15px 20px 11px 20px;
+	display: block;
+	border-bottom: 4px solid #333;
+}
+
+#ccrSearch-nav-wrapper ul li a:hover,
+#ccrSearch-nav-wrapper ul li a.active {
+	background-color: #434343;
+	border-bottom: 4px solid #e67e22;	
+}
+
+/**| FORM STYLES |***********************************/
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email] {
+  	border: 1px solid #ccc;  
+    padding: 5px;
+    background-color: #fff;
+    margin: 0;
+}
+
+label {
+	font-weight: 600; /* semi-bold 600 */
+}
+
+
+
+/**|  CLEAR FIX  |***********************************/
+
+.clearfix:after {
+   content: ".";
+   display: block;
+   clear: both;
+   visibility: hidden;
+   line-height: 0;
+   height: 0;
+}
+ 
+.clearfix {
+   display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+   display: block;
+}
+ 
+* html .clearfix {
+   height: 1%;
+   overflow: visible;
+}
