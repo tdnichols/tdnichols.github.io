@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BizAdmin: Manage Invitations</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300italic,600italic,400,700,300,600' rel='stylesheet' type='text/css'>
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<a href="#maincontent" class="hide-txt">Skip to main content</a>
+<div id="page-wrapper"> 
+  
+  <!-- Begin top banner -->
+  <div id="top-banner" class="clearfix"> <span class="helper"></span><a href="http://www.nih.gov/" target="_blank"><img src="images/NIH_logo.png" alt="NIH Logo" width="185" height="30" /></a>
+    <div id="login_txt">Welcome John Smith &nbsp; | &nbsp; <a href="#">Sign out</a></div>
+  </div>
+  <!-- /#top-banner --> 
+  
+  <!-- Begin logo banner -->
+  <div id="logo-banner" class="clearfix"> 
+    <!---->
+    <div id="logo"><a href="index.html"><img src="images/eVIP_logo.png" alt="eVIP Logo" width="77" height="60" /></a></div>
+    <ul id="global-nav">
+      <li><a href="index.html" id="home_pg">Home</a></li>
+      <li><a href="aboutus.html" id="about_pg">About eVIP</a></li>
+      <li><a href="tutorials.html" id="tutorials_pg">Tutorials</a></li>
+      <li><a href="faq.html" id="faq_pg">FAQ</a></li>
+      <li><a href="contactus.html" id="contactus_pg">Contact Us</a></li>
+      <li id="external_isupplier"><a href="http://">iSupplier</a></li>
+      <li><a href="bizadmin.html" id="bizadmin_pg">BizAdmin</a></li>
+    </ul>
+  </div>
+  <!-- /#logo-banner --> 
+  <a name="maincontent" id="maincontent"></a> 
+  <!-- Begin iService Banner -->
+  <div id="bizadmin-banner">
+    <h2>BizAdmin</h2>
+  </div>
+  <!-- /#iService-banner --> 
+  
+  <!-- Begin BizAdmin Navigation -->
+  <div id="bizadmin-nav-wrapper" class="clearfix">
+    <ul>
+      <li><a href="bizadmin.html" id="bizadmin_hm_pg">Home</a></li>
+      <li><a href="newInvitation.html" id="invitation_pg">Invite a New User</a></li>
+      <li><a href="manageInvitations.html" id="manageInvitations_pg">Manage Invitations</a></li>
+      <li><a href="manageUsers.html" id="manageUsers_pg">Manage Users</a></li>
+    </ul>
+    <div id="jobAid"><a href="#" class="right"><img src="images/bizadmin_job_aid.png" alt="BizAdmin Job Aid (PDF)" width="184" height="31" /></a></div>
+  </div>
+  <!-- /#bizadmin-nav-wrapper --> 
+  
+  <!-- Begin alert banner -->
+  <div id="alert" class="hide">
+    <p>Important alert condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper.</p>
+  </div>
+  <!-- /#alert --> 
+  
+  <!-- Begin iService content -->
+  
+  <div id="bizadmin-content" class="clearfix">
+    <form>
+      <div id="vendor_name_id_wrapper" class="clearfix">
+        <div style="float: left;">
+          <p><strong>Vendor Name:</strong> <span id="lblVendorName">PROTIVITI GOVERNMENT SERVICES, INC.</span></p>
+        </div>
+        <div style="float: right;">
+          <p><strong>Tax ID:</strong> <span id="lblVendorTaxID">522217360</span></p>
+        </div>
+      </div>
+      <h2>Manage Invitations</h2>
+      <p>Filter results by the following options:</p>
+      
+      <div id="filter_wrapper">
+      <ul class="columns triple">
+        <li><input id="MainContent_CheckBoxListStatus_0" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$0" checked="checked" value="Sent" /> <label for="MainContent_CheckBoxListStatus_0">Sent</label></li>
+        <li><input id="MainContent_CheckBoxListStatus_1" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$1" checked="checked" value="Reminder" /> <label for="MainContent_CheckBoxListStatus_1">Reminder</label></li>
+        <li><input id="MainContent_CheckBoxListStatus_2" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$2" checked="checked" value="Expired" /> <label for="MainContent_CheckBoxListStatus_2">Expired</label></li>
+        <li><input id="MainContent_CheckBoxListStatus_3" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$3" value="Cancelled" /> <label for="MainContent_CheckBoxListStatus_3">Cancelled</label></li>
+        <li><input id="MainContent_CheckBoxListStatus_4" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$4" value="Approved" /> <label for="MainContent_CheckBoxListStatus_4">Approved</label></li>
+        <li><input id="MainContent_CheckBoxListStatus_5" type="checkbox" name="ctl00$MainContent$CheckBoxListStatus$5" value="All" /> <label for="MainContent_CheckBoxListStatus_5">All</label></li>
+      </ul>
+      
+      <p><input type="submit" name="ctl00$MainContent$cmdFilter" value="Filter" id="MainContent_cmdFilter" /></p>
+      </div>
+      
+      <p><select name="ctl00$MainContent$ddlInvitationFilter" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlInvitationFilter\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlInvitationFilter" title="Invitation Filter">
+	<option selected="selected" value="My Invitations">My Invitations</option>
+	<option value="All Invitations">All Invitations</option></select></p>
+      <table id="MainContent_GridViewInvitations">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Invitation Date</th>
+          <th scope="col">Expiration Date</th>
+          <th scope="col">Invited By</th>
+          <th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$GridViewInvitations&#39;,&#39;Sort$State_LastAction&#39;)">Status</a></th>
+          <th scope="col">Action</th>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_0">david1</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_0" class="lowercase">david1@test.com</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_0">1/30/2014<br/>
+            11:59:34&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_0">2/20/2014<br/>
+            11:59:32&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_0">ELIZABETH J SPENCER</span></td>
+          <td>Sent</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl02$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_0" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl02$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_0" /></td>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_1">John Schoeb Test</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_1" class="lowercase">john.schoeb@nih.gov</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_1">12/20/2013<br/>
+            9:36:47&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_1">1/10/2014<br/>
+            9:36:46&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_1">ELIZABETH J SPENCER</span></td>
+          <td>Expired</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl03$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_1" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl03$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_1" disabled="disabled" class="aspNetDisabled" /></td>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_2">jp test</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_2" class="lowercase">jaipal.paul@gmail.com</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_2">12/6/2013<br/>
+            10:47:21&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_2">12/27/2013<br/>
+            10:47:20&nbsp;AM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_2">ELIZABETH J SPENCER</span></td>
+          <td>Expired</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl04$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_2" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl04$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_2" disabled="disabled" class="aspNetDisabled" /></td>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_3">Carl eVIP 1</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_3" class="lowercase">evip1@solvitor.com</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_3">12/2/2013<br/>
+            3:05:06&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_3">12/23/2013<br/>
+            3:05:06&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_3">ELIZABETH J SPENCER</span></td>
+          <td>Expired</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl05$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_3" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl05$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_3" disabled="disabled" class="aspNetDisabled" /></td>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_4">tim van nichols</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_4" class="lowercase">jaipalpaulpaul@gmail.com</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_4">11/20/2013<br/>
+            3:28:29&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_4">12/11/2013<br/>
+            3:28:29&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_4">ELIZABETH J SPENCER</span></td>
+          <td>Expired</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl06$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_4" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl06$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_4" disabled="disabled" class="aspNetDisabled" /></td>
+        </tr>
+        <tr>
+          <td><span id="MainContent_GridViewInvitations_lblPersonName_5">Jaipal Singh Paul</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblPersonEmail_5" class="lowercase">jaipalpaul@gmail.com</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitationDate_5">11/15/2013<br/>
+            4:07:12&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblExpiryDate_5">11/15/2013<br/>
+            4:10:28&nbsp;PM</span></td>
+          <td><span id="MainContent_GridViewInvitations_lblInvitedByName_5">ELIZABETH J SPENCER</span></td>
+          <td>Expired</td>
+          <td class="styled_table_button" align="center"><input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl07$cmdReinvite" value="Re-Invite" id="MainContent_GridViewInvitations_cmdReinvite_5" style="margin-bottom:5px" />
+            <br />
+            <input type="submit" name="ctl00$MainContent$GridViewInvitations$ctl07$cmdSuspend" value="Suspend" id="MainContent_GridViewInvitations_cmdSuspend_5" disabled="disabled" class="aspNetDisabled" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <!-- /#bizadmin-content --> 
+
+<script type="text/javascript">
+        document.getElementById("bizadmin_pg").className = "active";
+		document.getElementById("manageInvitations_pg").className = "active";
+		document.title = "BizAdmin: Manage Invitations";
+</script>
+  
+  <!-- Begin Footer -->
+  <div id="footer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About eVIP</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="http://">iSupplier</a></li>
+      <li><a href="#">BizAdmin</a></li>
+    </ul>
+    <ul>
+      <li><a href="http://hhs.gov/" target="_blank">Department of Health &amp; Human Services</a></li>
+      <li><a href="http://www.nih.gov" target="_blank">National Institutes of Health</a></li>
+      <li><a href="http://usa.gov/" target="_blank">USA.gov&mdash;Government Made Easy</a></li>
+    </ul>
+  </div>
+  <!-- /#footer --> 
+  
+</div>
+<!-- /#page-wrapper -->
+
+</body>
+</html>
