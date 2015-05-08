@@ -105,7 +105,7 @@ a:hover {
 }
 
 a[href^="http://"] {
-    background: url(../images/icon-external-link.gif) center right no-repeat;
+    background: url(https://cloud.githubusercontent.com/assets/12158413/7529400/a79d6c54-f505-11e4-9d90-e9926548f9dd.gif) center right no-repeat;
     padding-right: 14px;
 }
 
@@ -299,7 +299,7 @@ table tbody tr th:first-child +th {
 	width: 920px;
 	padding: 30px 52px;
 	background-color: #3567ac;
-	background-image: url(../images/iService_Banner_Bg.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529404/a7babe76-f505-11e4-9669-00bc81ae5a7a.jpg);
 	background-repeat: repeat;
 	background-position: left top;
 }
@@ -319,7 +319,7 @@ table tbody tr th:first-child +th {
 	width: 920px;
 	padding: 30px 52px;
 	background-color: #823da4;
-	background-image: url(../images/bizadmin_Banner_Bg.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529392/a788f24c-f505-11e4-82b5-95815537ed56.jpg);
 	background-repeat: repeat;
 	background-position: left top;
 }
@@ -339,7 +339,7 @@ table tbody tr th:first-child +th {
 	width: 920px;
 	padding: 30px 52px;
 	background-color: #FF9933;
-	background-image: url(../images/ccrSearch_Banner_Bg.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529398/a799022c-f505-11e4-82e9-caec0130bc59.jpg);
 	background-repeat: repeat;
 	background-position: left top;
 }
@@ -359,7 +359,7 @@ table tbody tr th:first-child +th {
 	padding: 15px 52px;
 	background-color: #eb5745;
 	color: #fff;
-	background-image: url(../images/alert_icon.png);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529402/a79f6216-f505-11e4-91aa-63cffa417832.png);
 	background-repeat: no-repeat;
 	background-position: 52px 15px;
 }
@@ -376,7 +376,7 @@ table tbody tr th:first-child +th {
 	width: 920px;
 	padding: 35px 52px;
 	background-color: #1d407f;
-	background-image: url(../images/welcomeBg.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529409/a7ca6218-f505-11e4-97f9-4444522435e1.jpg);
 	background-repeat: repeat;
 	background-position: left top;
 	color: #fff;
@@ -529,21 +529,21 @@ table tbody tr th:first-child +th {
 }
 
 .invite {
-	background-image: url(../images/new_user_icon.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529406/a7bcc216-f505-11e4-9cb1-b316b1fbb5c2.jpg);
 	padding: 7px 7px 0px 35px;
 	background-repeat: no-repeat;
 	background-position: 0 7px;	
 }
 
 .manageInvitations {
-	background-image: url(../images/invitations_icon.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529403/a7ba91a8-f505-11e4-8a9b-b290704485ea.jpg);
 	padding: 7px 7px 0px 35px;
 	background-repeat: no-repeat;
 	background-position: 0 2px;
 }
 
 .manageUsers {
-	background-image: url(../images/manage_users_icon.jpg);
+	background-image: url(https://cloud.githubusercontent.com/assets/12158413/7529408/a7bdbfd6-f505-11e4-8abf-69df21ad3bd5.jpg);
 	padding: 7px 7px 0px 40px;
 	background-repeat: no-repeat;
 	background-position: 0 7px;
