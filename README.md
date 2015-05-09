@@ -14,7 +14,7 @@ https://github.com/tdnichols/tdnichols.github.io/
 
 #### CCR Connections HTML Prototype
 
-(Note: All of the links are not active. This prototype serves only to share the general code developed for the template. A link to the production site is provided for a more thorough review.)
+(Note: All of the links are not active. This prototype serves only to share the general code developed for the template. The homepage along with the first two feature articles are currently active. A link to the production site is provided for a more thorough review.)
 
 http://tdnichols.github.io/ccrconnections/
 
