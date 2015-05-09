@@ -1,0 +1,246 @@
+/*
+
+Filename:				menu.css
+Author:					Tim N
+Style Type:				Responsive Stylesheet
+Modification Date:		2/13/2014
+Ver:					1.0
+
+Changelog:		v1.0 - 01.22.2014
+IE Support:		IE8+
+
+*/
+
+/*==| HOMEPAGE NAV STYLES |=============================================*/
+
+/* Nav */
+
+#hmpg_mainnav {	
+	margin: 40px 0;
+	text-align: center;
+	font-size: 0.875em;
+}
+
+#hmpg_mainnav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	list-style: none;
+}
+
+#hmpg_mainnav ul li {
+	display: inline-block;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	width: 190px;
+	text-transform: uppercase;
+	background-color: #ee9900;
+	padding: 12px 0;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+	behavior: url(css/PIE.htc);
+}
+
+#hmpg_mainnav ul li:hover {
+	background-color: #fff;	
+}
+
+#hmpg_mainnav ul li:hover a {
+	color: #ce851c;
+	text-decoration: none;
+}
+
+#hmpg_mainnav ul li:first-child {
+	margin-left: 0;
+}
+
+#hmpg_mainnav ul li a {		
+	color: #fff;
+	font-weight: 600;	
+}
+
+
+/**==| MEDIA QUERIES |=======================================*/
+
+
+@media screen and (min-width: 641px) {
+
+/**==| LANDING PAGE GLOBAL NAVIGATION |=============================*/
+
+/* 
+
+This mobile toggle menu is supported by the following browsers:
+
+IE9+
+Chrome
+Firefox
+Safari
+Note: We don't have to accommodate IE8 and earlier because they are not supported by mobile technology 
+
+*/
+
+/* http://www.joesnellpdx.com/toggle-navigation-no-javascript/ */
+
+.menu-link {
+    display: none;
+}
+
+body:not(:target) #menu {
+	list-style-type: none;
+	float: right;
+	text-align: right;
+	margin: 35px 0 0 0;
+	font-size: 0.875em;
+}
+
+body:not(:target) #menu li {
+	display: inline;
+	border: none;
+}
+
+/* modify */
+
+body:not(:target) #menu li a {
+	color: #444;
+	font-weight: 600;
+	padding: 15px;
+	width: auto;
+	border: none;
+	background-color: transparent;
+}
+body:not(:target) #menu li a:hover,
+body:not(:target) #menu li a.current {
+	color: #ee9900;
+	text-decoration: none;
+}
+body:not(:target) #menu .back {
+	display: none;
+}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+#masthead { /* allows .menu-link to correctly position to the next parent */
+	position: static;
+}
+
+/* menu toggle */
+
+.menu-link {
+	color: #fff;
+	background-color: #333;
+	/*display: inline-block;*/
+	padding: 12px;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+	font-size: 0.875em;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(css/PIE.htc);
+	z-index: 1001;
+}
+
+.menu-link:hover {
+	text-decoration: none;
+	background-color: #222222;
+}
+
+/* mobile navigation styles */
+
+
+.menu li a {
+  color: #efefef;
+  text-decoration: none;
+  background-color: #222222;
+  display: inline-block;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 15px;
+  border-bottom: 1px solid #333333;
+  box-sizing: border-box; /* Chrome, IE8+, Opera 8.5+ */
+  -moz-box-sizing: border-box; /*Firefox 1-3*/
+  -webkit-box-sizing: border-box; /* Safari */
+  width: 100%;
+}
+.menu li a:hover {
+  color: #aaa;
+  background-color: #333333;
+}
+
+body:not(:target) #menu {
+  padding-top: 96px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+body:not(:target) #menu li {
+  width: 100%;
+  margin: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  transition: height 0.25s;
+}
+body:not(:target) #menu:target {
+  z-index: 1001;
+}
+
+body:not(:target) #menu:target li {
+  height: 3em;
+  line-height: 3em;
+  overflow: visible;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  transition: height 0.25s;
+}
+
+body:not(:target) #menu:target .back {
+  height: 0;
+  line-height: 0;
+}
+
+body:not(:target) #menu:target .back a {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  text-indent: -999em;
+  z-index: -1;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+/* Homepage navigation */
+
+#hmpg_mainnav ul li {
+	display: block;
+	margin-left: 0;
+	width: auto;	
+}
+
+#hmpg_mainnav ul li a {
+	display: block;	
+}
+
+}
