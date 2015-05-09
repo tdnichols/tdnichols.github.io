@@ -1,0 +1,568 @@
+/*
+
+Filename:				styles.css
+Author:					Tim N
+Style Type:				Responsive Stylesheet
+Modification Date:		2/13/2014
+Ver:					1.0
+
+Changelog:		v1.0 - 01.22.2014
+IE Support:		IE8+
+
+Font Styles for Open Sans
+
+font-weight: 300 	Light 300 
+font-weight: 400	Normal 400
+font-weight: 600	Semi-Bold 600
+font-weight: 700	Bold 700
+
+*/
+
+/**==| DEFAULT LAYOUT FOR DESKTOPS AND LAPTOPS |==================================*/
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	background-color: #2d2d2d;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	line-height: 1.625; /* 25px/16px */	
+}
+
+#masthead {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/*==| MISC STYLES |============================================*/
+
+.hide {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+#page_wrapper #breadcrumb {
+	font-size: 0.8125em;
+	margin-bottom: 25px;	
+}
+
+.curved-box {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(css/PIE.htc); /* IE 6-9 */
+	padding: 4px 10px 6px;
+	color: #fff;
+	/* fallback */
+	background-color: #4f4f4f;	
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7b7b7b), to(#2f2f2f));	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #7b7b7b, #2f2f2f);	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #7b7b7b, #2f2f2f);	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #7b7b7b, #2f2f2f);	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #7b7b7b, #2f2f2f);
+}
+
+/* Required field alerts */
+
+#form_wrapper .req_field {
+	background-color: #ffdfdf;
+	border: 1px solid #eb5745;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+#page_wrapper #form_wrapper .req_field h3 {
+	margin: 0 0 .5em 0;
+	font-size: 0.8125em;
+	line-height: 1.8em;
+	color: #fff;
+	padding: 7px 45px;
+	font-weight: 600;
+	background-color: #eb5745;	
+	border-bottom: none;
+	background-image: url(../images/alert_icon.png);
+	background-repeat: no-repeat;
+	background-position: 10px 7px;
+}
+#form_wrapper .req_field ul,
+#form_wrapper .confirmation_field ul {
+	padding: 0;
+	list-style: none;
+	font-size: 0.8125em;
+	margin: 0 10px 15px 10px;
+}
+#form_wrapper .req_field ul li,
+#form_wrapper .confirmation_field ul li {
+	list-style-type: disc;
+	color: #222;
+	/*color: #C03;
+	padding: 2px 0;*/
+	font-size: inherit;	
+	margin: 0;
+	padding: 2px;
+	list-style-position: inside;
+	border-bottom: 1px dotted #df7d7d;
+	position: relative;
+}
+
+/* Confirmation alert */
+
+#form_wrapper .confirmation_field {
+	background-color: #ccffcc;
+	border: 1px solid #5b9c5c;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+#page_wrapper #form_wrapper .confirmation_field h3 {
+	margin: 0 0 .5em 0;
+	font-size: 0.8125em;
+	line-height: 1.8em;
+	color: #fff;
+	padding: 7px 45px;
+	font-weight: 600;
+	background-color: #5b9c5c;	
+	border-bottom: none;
+	background-image: url(../images/confirmation_icon.png);
+	background-repeat: no-repeat;
+	background-position: 10px 7px;
+}
+
+#form_wrapper .confirmation_field ul li {
+	list-style-type: disc;
+	color: #222;
+	/*color: #C03;
+	padding: 2px 0;*/
+	font-size: inherit;	
+	margin: 0;
+	padding: 2px;
+	list-style-position: inside;
+	border-bottom: 1px dotted #5b9c5c;
+	position: relative;
+}
+/*==| GENERAL STYLES |============================================*/
+
+/* Typography */
+
+
+#page_wrapper_hm h1 {
+	margin-top: 0;
+	padding: 0;
+}
+
+#page_wrapper h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#page_wrapper_hm h1 a {
+	background-image: url(../images/CFT_hmpg_logo.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;
+	width: 325px;
+	height: 76px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;	
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+#page_wrapper h1 a {
+	float: left;
+	background-image: url(../images/CFT_logo_sm.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;
+	height: 95px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 260px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: 400;
+	color: #fff;
+	margin: 30px 0;
+}
+
+#page_wrapper_hm h2 {
+	text-align: center;
+}
+
+#page_wrapper h3:first-child {
+	margin: 18px 0 25px 0;
+}
+
+#page_wrapper h3 {
+	margin: 24px 0 25px 0;
+	font-weight: 700;
+	font-size: 1em;
+	color: #c07b1a;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999999;
+}
+
+#descriptor h2 {
+	font-size: 1.3125em;
+	font-weight: 600;
+	margin: 0 0 15px 0;
+	color: #333;
+}
+
+#descriptor p {
+	font-size: 0.875em; /* 14px */
+	word-wrap: break-word;
+	color: #444;
+}
+
+a {
+	text-decoration: none;
+	color: #3366ff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*==| TABLE STYLES |=============================*/
+
+
+/* Expland and Collapse Styles */
+
+ 
+.on_arrow {
+       float: left;
+       width: 31px;
+       height: 17px;
+       overflow: hidden;
+       background-image: url(../images/down_arrow.png);
+       padding: 0;
+       margin: 0;
+}
+ 
+.off_arrow {
+       float: left;
+       width: 31px;
+       height: 17px;
+       overflow: hidden;
+       background-image: url(../images/right_arrow.png);
+	   vertical-align: middle;
+       padding: 0;
+       margin: 0;
+}
+
+#open_close_wrapper {
+	margin: 0 0 10px 0;
+	padding: 8px 0;
+	font-size: 0.8125em;
+	display: block;
+}
+
+#page_wrapper div.table_wrapper {
+	margin: 0 0 15px 0;
+	padding: 0;
+	width: 100%;
+}
+#page_wrapper div.table_heading {
+	background-color: #ee9920;
+	margin: 0;
+	color: #fff;
+	width: 100%;
+	padding: 8px 10px;
+}
+
+#page_wrapper div.table_heading h3 {
+	text-transform:uppercase;
+	font-size: 0.8125em;
+	color: #fff;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	border: none;
+	float:left;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+	font-size: 0.8125em; /* 13px */
+	margin: 0px 0 15px 0;
+	border: 1px solid #222;
+	background-color: #fff;
+	width: 100%;
+	box-sizing:border-box;	
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td,
+table tr th {
+	padding: 10px;
+	border-bottom: 1px dotted #c6c9cc;
+}
+
+table tr td:first-child {
+	border-left: none;
+}
+
+table tr td {
+	border-left: 1px dotted #c6c9cc;
+}
+
+table tr th {
+  background: #222;
+  color: #fff;
+}
+
+table tr:nth-child(odd) {
+  background: #efefef;
+}
+
+table tr th a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+table tr td {
+	text-align:center;
+}
+
+/* left aligns the 1st and 2nd table cell for each row */
+
+table tr td:first-child,
+table tr th:first-child,
+table tr td:first-child + td,
+table tr th:first-child + th,
+table tr td:first-child + td + td,
+table tr th:first-child + th + th,
+table tr td:first-child + td + td + td,
+table tr th:first-child + th + th + th {
+      text-align: left;
+}
+
+/*==| FORM STYLES |=============================*/
+
+#form_wrapper label,
+#form_wrapper div.nolabel,
+#form_wrapper legend {
+	font-size: 0.875em;
+	font-weight: 400;
+}
+
+#form_wrapper label span,
+#form_wrapper div.nolabel span,
+#form_wrapper legend span {
+	color: red;
+	/*font-weight: 700;*/
+}
+
+.form_row div span.notation {
+	color: #666;
+	font-size: 0.6875em; /* 11px/16px */	
+}
+
+input[type=submit]{
+	cursor:pointer;
+	padding:6px 10px;
+	background-color:#ed9800;
+	border: none; /* required or the default border for the browser will appear */
+	font-size: 0.8125em;
+	font-weight: 600;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(PIE.htc);
+	color:#fff;
+
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input[type=submit]:hover, 
+input[type=submit]:focus {
+	background-color :#a36900;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	padding: 3px;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=submit],
+select,
+textarea {
+	margin-bottom: 5px;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select,
+label,
+legend,
+div,
+div.table_heading {
+	box-sizing: border-box; /* Chrome, IE8+, Opera 8.5+ */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	-ms-box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select,
+label,
+legend {
+	font-size: 0.8125em;
+}
+
+form > div.form_row {
+	clear: both;
+	overflow: hidden;
+	padding: 1px;
+	margin: 0 0 10px 0;
+}
+
+form > div.form_row > fieldset > div > div {
+	margin: 0 0 5px 0;
+}
+form > div.form_row > label,
+form > div.form_row > div.nolabel,
+legend {
+	width: 25%;
+	float: left;
+	padding-right: 15px;
+}
+form > div.form_row > div,
+form > div.form_row > fieldset > div {
+	width: 75%;
+	float: right;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+	width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus,
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=url]:hover,
+input[type=password]:hover,
+textarea:hover {
+	outline: 0;
+	border-color: #4697e4;
+}
+
+
+
+/*==| LAYOUT STYLES |=============================*/
+
+
+#page_wrapper_hm {
+	padding: 0 20px;
+	border-top: 5px solid #ee9900;
+}
+
+#page_wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	border-top: 5px solid #ee9900;
+	background-color: #fff; 
+}
+
+#header {
+	padding: 0 52px;
+	background-color: #fff;
+	border-bottom: 1px solid #efeff2;
+}
+
+#masthead ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#descriptor {
+	padding: 25px 52px 36px 52px;	
+}
+
+#form_wrapper {
+	background-color: #f9f8e1;
+	padding: 18px 52px 36px 52px;
+}
+
+
+
+/**|  CLEAR FIX  |***********************************/
+
+.clearfix:after {
+   content: ".";
+   display: block;
+   clear: both;
+   visibility: hidden;
+   line-height: 0;
+   height: 0;
+}
+ 
+.clearfix {
+   display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+   display: block;
+}
+ 
+* html .clearfix {
+   height: 1%;
+   overflow: visible;
+}
