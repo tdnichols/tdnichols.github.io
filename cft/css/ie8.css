@@ -1,0 +1,51 @@
+/*
+
+Filename:				menu.css
+Author:					Tim N
+Style Type:				Responsive Stylesheet
+Modification Date:		2/13/2014
+Ver:					1.0
+
+Changelog:		v1.0 - 01.22.2014
+IE Support:		IE8
+
+*/
+
+
+.menu-link {
+    display: none;
+}
+
+#masthead #menu {
+	list-style-type: none;
+	float: right;
+	text-align: right;
+	padding: 35px 0 0 0;
+	font-size: 0.875em;
+}
+
+#masthead #menu li {
+	display: inline;
+	border: none;
+}
+
+#masthead #menu li a {
+	color: #444;
+	font-weight: 600;
+	padding: 15px;
+	width: auto;
+	border: none;
+	background-color: transparent;
+}
+#masthead #menu li a:hover,
+#masthead #menu li a.current {
+	color: #ee9900;
+	text-decoration: none;
+}
+#masthead #menu .back {
+	display: none;
+}
+
+
+
+
