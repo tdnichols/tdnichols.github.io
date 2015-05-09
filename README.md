@@ -1,5 +1,4 @@
 # tdnichols.github.io
-=====================
 
 ## Tim Nicholson's UI/UX Portfolio!
 
