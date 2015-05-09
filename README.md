@@ -2,7 +2,7 @@
 
 ## Tim Nicholson's UI/UX Portfolio!
 
-This is a work in progress!
+This is a work in progress! More samples will be added overtime, so please check back periodically.
 
 My Github user page is at:
 https://github.com/tdnichols/
